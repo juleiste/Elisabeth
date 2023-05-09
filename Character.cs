@@ -2,6 +2,24 @@ abstract class Character
 {
     public Slots Slots { get; set; }
     public enum Type { Warrior, Mage }
+    public Validation Validation { get; set; }
+    public Character()
+    {
+        Slots = new Slots();
+        Validation = new Validation();
+    }
+
+    public void SetWeapon(Items.Weapon weapon)
+    {
+        if (Validation.validWeapons.Contains(weapon))
+        {
+            Slots.Weapon = weapon;
+        }
+        else
+        {
+            throw new Exception("Invalid weapon choice for character type");
+        }
+    }
     public virtual void DisplayInfo()
     {
         Console.WriteLine("Character Info:");
@@ -16,29 +34,18 @@ class Slots
     public Items.Feet Feet;
     public Items.Hands Hands;
     public Items.Weapon Weapon;
+}
+
+class Validation
+{
     public Items.Weapon[] validWeapons;
-    public void SetWeapon(Items.Weapon weapon)
-    {
-        if (validWeapons.Contains(weapon))
-        {
-            Weapon = weapon;
-        }
-        else
-        {
-            throw new Exception("Invalid weapon choice for character type");
-        }
-    }
 }
 class Warrior : Character
 {
     public Warrior()
     {
         Console.WriteLine("Warrior created");
-        Slots = new Slots
-        {
-            validWeapons = new Items.Weapon[] { Items.Weapon.Axe, Items.Weapon.Sword }
-        };
-
+        Validation.validWeapons = new Items.Weapon[] { Items.Weapon.Axe, Items.Weapon.Sword };
     }
 
     public override void DisplayInfo()
@@ -53,10 +60,7 @@ class Mage : Character
     public Mage()
     {
         Console.WriteLine("Mage created");
-        Slots = new Slots
-        {
-            validWeapons = new Items.Weapon[] { Items.Weapon.Wand }
-        };
+        Validation.validWeapons = new Items.Weapon[] { Items.Weapon.Wand };
     }
 
     public override void DisplayInfo()
