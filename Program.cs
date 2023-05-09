@@ -1,4 +1,6 @@
 ﻿// Prompt the user to select a character class
+using Models;
+
 Console.Write("Please select your character class: ");
 var classTypes = Enum.GetNames(typeof(Character.Type));
 string classTypesString = string.Join(", ", classTypes);
