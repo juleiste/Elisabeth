@@ -10,6 +10,6 @@ string weaponInput = Console.ReadLine();
 Items.Weapon weapon = (Items.Weapon)Enum.Parse(typeof(Items.Weapon), weaponInput, true);
 
 // Display character info
-character.Slots.SetWeapon(weapon);
+character.SetWeapon(weapon);
 Console.Clear();
 character.DisplayInfo();
