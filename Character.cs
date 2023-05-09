@@ -11,10 +11,10 @@ abstract class Character
 
 class Slots
 {
-    public enum Chest { Plate, Robe, None };
-    public enum Legs { Pants, Skirt, None };
-    public enum Feet { Boots, Sandals, None };
-    public enum Hands { Gauntlets, Gloves, None };
+    public Items.Chest Chest;
+    public Items.Legs Legs;
+    public Items.Feet Feet;
+    public Items.Hands Hands;
     public Items.Weapon Weapon;
     public Items.Weapon[] validWeapons;
     public void SetWeapon(Items.Weapon weapon)
