@@ -26,7 +26,6 @@ abstract class Character
         Console.WriteLine($"Selected Weapon: {Slots.Weapon}");
     }
 }
-
 class Slots
 {
     public Items.Chest Chest;
@@ -54,7 +53,6 @@ class Warrior : Character
         Console.WriteLine("Class: Warrior");
     }
 }
-
 class Mage : Character
 {
     public Mage()
@@ -84,13 +82,4 @@ static class CharacterFactory
                 throw new ArgumentException("Invalid character type");
         }
     }
-}
-
-class Items
-{
-    public enum Weapon { Axe, Sword, Wand };
-    public enum Chest { Plate, Robe };
-    public enum Legs { Pants, Skirt };
-    public enum Feet { Boots, Sandals };
-    public enum Hands { Gauntlets, Gloves };
 }
