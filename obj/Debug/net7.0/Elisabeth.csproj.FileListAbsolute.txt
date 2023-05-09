@@ -1,0 +1,15 @@
+D:\Projects\Elisabeth\bin\Debug\net7.0\Elisabeth.exe
+D:\Projects\Elisabeth\bin\Debug\net7.0\Elisabeth.deps.json
+D:\Projects\Elisabeth\bin\Debug\net7.0\Elisabeth.runtimeconfig.json
+D:\Projects\Elisabeth\bin\Debug\net7.0\Elisabeth.dll
+D:\Projects\Elisabeth\bin\Debug\net7.0\Elisabeth.pdb
+D:\Projects\Elisabeth\obj\Debug\net7.0\Elisabeth.csproj.AssemblyReference.cache
+D:\Projects\Elisabeth\obj\Debug\net7.0\Elisabeth.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Elisabeth\obj\Debug\net7.0\Elisabeth.AssemblyInfoInputs.cache
+D:\Projects\Elisabeth\obj\Debug\net7.0\Elisabeth.AssemblyInfo.cs
+D:\Projects\Elisabeth\obj\Debug\net7.0\Elisabeth.csproj.CoreCompileInputs.cache
+D:\Projects\Elisabeth\obj\Debug\net7.0\Elisabeth.dll
+D:\Projects\Elisabeth\obj\Debug\net7.0\refint\Elisabeth.dll
+D:\Projects\Elisabeth\obj\Debug\net7.0\Elisabeth.pdb
+D:\Projects\Elisabeth\obj\Debug\net7.0\Elisabeth.genruntimeconfig.cache
+D:\Projects\Elisabeth\obj\Debug\net7.0\ref\Elisabeth.dll
