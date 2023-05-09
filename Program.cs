@@ -1,11 +1,19 @@
 ﻿// Prompt the user to select a character class
-Console.WriteLine("Please select your character class: Warrior or Mage");
+Console.Write("Please select your character class: ");
+var classTypes = Enum.GetNames(typeof(Character.Type));
+string classTypesString = string.Join(", ", classTypes);
+Console.WriteLine(classTypesString);
+
 string classInput = Console.ReadLine();
 
 // Create a new character object based on the user input
 Character character = CharacterFactory.CreateCharacter(classInput);
 
-Console.WriteLine("Please select your character weapon: Axe, Sword, or Wand");
+Console.Write("Please select your character weapon: ");
+var weaponTypes = Enum.GetNames(typeof(Items.Weapon));
+string weaponTypesString = string.Join(", ", weaponTypes);
+Console.WriteLine(weaponTypesString);
+
 string weaponInput = Console.ReadLine();
 Items.Weapon weapon = (Items.Weapon)Enum.Parse(typeof(Items.Weapon), weaponInput, true);
 
